@@ -1,0 +1,39 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
+Build/
+Builds/
+Logs/
+
+# ===================================== #
+# Visual Studio / Rider / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+.vs/
+.vscode/
+.plastic/
+/*.userprefs
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userosscache
+/*.booproj
+/*.pidb
+/*.svclog
+/*.dotCover
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
