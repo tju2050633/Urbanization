@@ -46,7 +46,7 @@ public class UI_Component : MonoBehaviour
     }
 
     // 访问者模式的accept()方法
-    public virtual void update_info()
+    public virtual void update_info(UI_Updater updater)
     {
 
     }

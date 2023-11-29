@@ -36,7 +36,8 @@ public class AssetManager
         Copper_Stock += copper;
         Iron_Stock += iron;
 
-        // TODO：更新UI
+        // 更新UI
+        UI_Component root = GameObject.Find("UI").GetComponent<UI_Component>();
+        root.update_info(new UI_Updater());
     }
-
 }

@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 控制面板-建筑信息标签
-public class Label_BuildingInfo : UI_Component
+public class Label_Population_Increment : UI_Component
 {
     public override void update_info(UI_Updater updater)
     {
-        updater.update(this, "building_info");
+        updater.update(this, "population_increment");
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 // 控制面板-地貌信息标签
 public class Label_FeatureInfo : UI_Component
 {
-    public override void update_info()
+    public override void update_info(UI_Updater updater)
     {
-        
+        updater.update(this, "feature_info");
     }
 }

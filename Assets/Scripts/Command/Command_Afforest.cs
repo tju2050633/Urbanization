@@ -6,6 +6,7 @@ using UnityEngine;
 public class Command_Afforest : Command
 {
     Cell cell;
+    
     public Command_Afforest(Cell cell)
     {
         this.cell = cell;

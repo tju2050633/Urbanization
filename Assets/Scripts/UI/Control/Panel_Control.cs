@@ -5,8 +5,5 @@ using UnityEngine;
 // 控制面板
 public class Panel_Control : UI_Component
 {
-    public override void update_info()
-    {
-        
-    }
+
 }

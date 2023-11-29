@@ -7,6 +7,10 @@ using UnityEngine;
 // 观察者模式：单元格是被观察者，建筑是观察者
 public class Cell : MonoBehaviour
 {
+    // 坐标 [0, x_max], [0, y_max]
+    public int x;
+    public int y;
+
     // 持有对象
     public State state;
     public Terrain terrain;
@@ -117,8 +121,7 @@ public class Cell : MonoBehaviour
 
     public List<Cell> getNeighborCells(int distance)
     {
-        // TODO: 从地图中获取距离≤distance的所有单元格
-        return new List<Cell>();
+        return CellManager.getInstance().getNeighborCells(this, distance);
     }
 
     // 观察者模式：当单元格（被观察者）某些属性发生变化、可能产生额外增减益时，
