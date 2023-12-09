@@ -7,6 +7,7 @@ using UnityEngine;
 // 原型模式：区域是一个原型，可以被克隆
 public abstract class Zone : ICloneable
 {
+    // 建造区域的花费（各种都一样）
     public float cost_gold = 500;
     public float cost_wood = 200;
     public float cost_stone = 100;
@@ -20,7 +21,7 @@ public abstract class Zone : ICloneable
     // 获取特定区域下建筑的字典，key为建筑的名称，value为建筑的当前数量、上限和建筑对象列表
     public abstract Dictionary<string, (int, int, List<Building>)> getBuildingDictionary();
     
-    // 检查建造区域的资源是否足够
+    // 过滤器模式：检查建造区域的资源是否足够
     public bool isResourceEnough()
     {
         return getFilterChain().isEnough(this);
@@ -38,7 +39,7 @@ public abstract class Zone : ICloneable
         return chain;
     }
 
-    // 消耗资源
+    // 责任链模式：消耗资源
     public void consumeResource()
     {
         getHandlerChain().consume(this);

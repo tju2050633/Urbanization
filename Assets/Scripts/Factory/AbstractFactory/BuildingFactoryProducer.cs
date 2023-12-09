@@ -16,6 +16,26 @@ public class BuildingFactoryProducer
         {
             return new BuildingFactory_Agricultural();
         }
+        else if (string.Equals(zoneType, "Academic", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return new BuildingFactory_Academic();
+        }
+        else if (string.Equals(zoneType, "Commercial", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return new BuildingFactory_Commercial();
+        }
+        else if (string.Equals(zoneType, "Industrial", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return new BuildingFactory_Industrial();
+        }
+        else if (string.Equals(zoneType, "Leisure", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return new BuildingFactory_Leisure();
+        }
+        else if (string.Equals(zoneType, "Military", System.StringComparison.OrdinalIgnoreCase))
+        {
+            return new BuildingFactory_Military();
+        }
         else
         {
             Debug.LogError("区域类型字符串错误：" + zoneType);
