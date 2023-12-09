@@ -43,4 +43,34 @@ public class BuildingFactory_Residential : BuildingFactory
         Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
         return null;
     }
+
+    public override Building getAcademicBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getCommercialBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getIndustrialBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getLeisureBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getMilitaryBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
 }

@@ -38,7 +38,7 @@ public class Building
     // 这几种产出对距离≤n的所有单元格生效
     protected (int, float) yield_electricity = (0, 0);
     protected (int, float) yield_happiness = (0, 0);
-    protected (int, float) yield_pollutation = (0, 0);
+    protected (int, float) yield_pollution = (0, 0);
 
     // 低级建筑上限增加
     protected Dictionary<string, int> lower_building_limit_incre = new Dictionary<string, int>();
@@ -116,9 +116,9 @@ public class Building
             if (recaculate)
                 c.Recaculate();
         }
-        foreach (Cell c in cell.getNeighborCells(yield_pollutation.Item1))
+        foreach (Cell c in cell.getNeighborCells(yield_pollution.Item1))
         {
-            c.pollution += yield_pollutation.Item2;
+            c.pollution += yield_pollution.Item2;
             if (recaculate)
                 c.Recaculate();
         }

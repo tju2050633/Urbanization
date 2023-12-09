@@ -9,6 +9,6 @@ public class Slum : Building
         init_limit = 1;
         yield_accommodation = 50;
         yield_happiness = (1, -30);
-        yield_pollutation = (2, 10);
+        yield_pollution = (2, 10);
     }
 }

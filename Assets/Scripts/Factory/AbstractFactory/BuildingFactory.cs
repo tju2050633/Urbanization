@@ -7,4 +7,9 @@ public abstract class BuildingFactory
 {
     public abstract Building getResidentialBuilding(string buildingType);
     public abstract Building getAgriculturalBuilding(string buildingType);
+    public abstract Building getAcademicBuilding(string buildingType);
+    public abstract Building getCommercialBuilding(string buildingType);
+    public abstract Building getIndustrialBuilding(string buildingType);
+    public abstract Building getLeisureBuilding(string buildingType);
+    public abstract Building getMilitaryBuilding(string buildingType);
 }

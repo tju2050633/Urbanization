@@ -16,31 +16,31 @@ public class BuildingFactory_Agricultural : BuildingFactory
         Building agriculturalBuilding;
         if (string.Equals(buildingType, "Granary", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new Granary();
+            agriculturalBuilding = new Granary();
         }
         else if (string.Equals(buildingType, "Farm", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new Farm();
+            agriculturalBuilding = new Farm();
         }
         else if (string.Equals(buildingType, "Orchard", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new Orchard();
+            agriculturalBuilding = new Orchard();
         }
         else if (string.Equals(buildingType, "Ranche", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new Ranche();
+            agriculturalBuilding = new Ranche();
         }
         else if (string.Equals(buildingType, "MechanizedFarm", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new MechanizedFarm();
+            agriculturalBuilding = new MechanizedFarm();
         }
         else if (string.Equals(buildingType, "MechanizedOrchard", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new MechanizedOrchard();
+            agriculturalBuilding = new MechanizedOrchard();
         }
         else if (string.Equals(buildingType, "MechanizedRanche", System.StringComparison.OrdinalIgnoreCase))
         {
-            agriculturalBuilding =  new MechanizedRanche();
+            agriculturalBuilding = new MechanizedRanche();
         }
         else
         {
@@ -50,5 +50,35 @@ public class BuildingFactory_Agricultural : BuildingFactory
 
         // 应用装饰器模式
         return new Decorator_Pollution(new Decorator_Happiness(agriculturalBuilding));
+    }
+
+    public override Building getAcademicBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getCommercialBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getIndustrialBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getLeisureBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
+    }
+
+    public override Building getMilitaryBuilding(string buildingType)
+    {
+        Debug.LogError("get***Building方法调用错误，检查工厂类型和方法名是否一致");
+        return null;
     }
 }

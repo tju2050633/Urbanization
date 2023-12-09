@@ -72,6 +72,7 @@ public class CellBuilder
         }
         return true;
     }
+    
 
     public Cell build(GameObject gameObject)
     {
