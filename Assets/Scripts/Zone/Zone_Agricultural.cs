@@ -8,13 +8,13 @@ public class Zone_Agricultural : Zone
     {
         Dictionary<string, (int, int, List<Building>)> buildings = new Dictionary<string, (int, int, List<Building>)>
         {
-            { "Granary", (0, 3, new List<Building>()) },
-            { "Farm", (0, 5, new List<Building>()) },
-            { "Orchard", (0, 5, new List<Building>()) },
-            { "Ranche", (0, 5, new List<Building>()) },
-            { "MechanizedFarm", (0, 1, new List<Building>()) },
-            { "MechanizedOrchard", (0, 1, new List<Building>()) },
-            { "MechanizedRanche", (0, 1, new List<Building>()) },
+            { "Granary", (0, new Granary().init_limit, new List<Building>()) },
+            { "Farm", (0, new Farm().init_limit, new List<Building>()) },
+            { "Orchard", (0, new Orchard().init_limit, new List<Building>()) },
+            { "Ranche", (0, new Ranche().init_limit, new List<Building>()) },
+            { "MechanizedFarm", (0, new MechanizedFarm().init_limit, new List<Building>()) },
+            { "MechanizedOrchard", (0, new MechanizedOrchard().init_limit, new List<Building>()) },
+            { "MechanizedRanche", (0, new MechanizedRanche().init_limit, new List<Building>()) },
         };
 
         return buildings;

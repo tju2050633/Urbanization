@@ -9,47 +9,47 @@ public class Building
     public Cell cell;
 
     // 初始建造上限
-    protected int init_limit = 0;
+    public int init_limit = 0;
 
     // 解锁条件
-    protected float unlock_science = 0;
-    protected float unlock_culture = 0;
-    protected float unlock_commercialization = 0;
-    protected float unlock_military = 0;
-    protected float unlock_productivity = 0;
-    protected float unlock_electricity = 0;
+    public float unlock_science = 0;
+    public float unlock_culture = 0;
+    public float unlock_commercialization = 0;
+    public float unlock_military = 0;
+    public float unlock_productivity = 0;
+    public float unlock_electricity = 0;
 
     // 资源消耗
-    protected float cost_gold = 0;
-    protected float cost_wood = 0;
-    protected float cost_stone = 0;
-    protected float cost_copper = 0;
-    protected float cost_iron = 0;
+    public float cost_gold = 0;
+    public float cost_wood = 0;
+    public float cost_stone = 0;
+    public float cost_copper = 0;
+    public float cost_iron = 0;
 
     // 产出
-    protected float yield_accommodation = 0;
-    protected float yield_food = 0;
-    protected float yield_gold_incre = 0;
-    protected float yield_science = 0;
-    protected float yield_culture = 0;
-    protected float yield_commercialization = 0;
-    protected float yield_military = 0;
-    protected float yield_productivity = 0;
+    public float yield_accommodation = 0;
+    public float yield_food = 0;
+    public float yield_gold_incre = 0;
+    public float yield_science = 0;
+    public float yield_culture = 0;
+    public float yield_commercialization = 0;
+    public float yield_military = 0;
+    public float yield_productivity = 0;
     // 这几种产出对距离≤n的所有单元格生效
-    protected (int, float) yield_electricity = (0, 0);
-    protected (int, float) yield_happiness = (0, 0);
-    protected (int, float) yield_pollution = (0, 0);
+    public (int, float) yield_electricity = (0, 0);
+    public (int, float) yield_happiness = (0, 0);
+    public (int, float) yield_pollution = (0, 0);
 
     // 低级建筑上限增加
-    protected Dictionary<string, int> lower_building_limit_incre = new Dictionary<string, int>();
+    public Dictionary<string, int> lower_building_limit_incre = new Dictionary<string, int>();
 
     // 额外产出条件和值
-    protected (float, float) bonus_electricity = (0, 0);
-    protected (float, float) bonus_commercialization = (0, 0);
-    protected (float, float) bonus_science = (0, 0);
-    protected (float, float) bonus_culture = (0, 0);
-    protected (float, float) bonus_happiness = (0, 0);
-    protected (float, float) bonus_pollution = (0, 0);
+    public (float, float) bonus_electricity = (0, 0);
+    public (float, float) bonus_commercialization = (0, 0);
+    public (float, float) bonus_science = (0, 0);
+    public (float, float) bonus_culture = (0, 0);
+    public (float, float) bonus_happiness = (0, 0);
+    public (float, float) bonus_pollution = (0, 0);
 
     public bool isResourceEnough() // 资源是否足够
     {

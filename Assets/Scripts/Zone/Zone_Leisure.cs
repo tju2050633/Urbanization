@@ -8,12 +8,12 @@ public class Zone_Leisure : Zone
     {
         Dictionary<string, (int, int, List<Building>)> buildings = new Dictionary<string, (int, int, List<Building>)>
         {
-            { "Theater", (0, 5, new List<Building>()) },
-            { "Zoo", (0, 3, new List<Building>()) },
-            { "Stadium", (0, 2, new List<Building>()) },
-            { "Museum", (0, 1, new List<Building>()) },
-            { "AmusementPark", (0, 1, new List<Building>()) },
-            { "NaturalPark", (0, 1, new List<Building>()) },
+            { "Theater", (0, new Theater().init_limit, new List<Building>()) },
+            { "Zoo", (0, new Zoo().init_limit, new List<Building>()) },
+            { "Stadium", (0, new Stadium().init_limit, new List<Building>()) },
+            { "Museum", (0, new Museum().init_limit, new List<Building>()) },
+            { "AmusementPark", (0, new AmusementPark().init_limit, new List<Building>()) },
+            { "NaturalPark", (0, new NaturalPark().init_limit, new List<Building>()) },
         };
 
         return buildings;

@@ -8,11 +8,11 @@ public class Zone_Residential : Zone
     {
         Dictionary<string, (int, int, List<Building>)> buildings = new Dictionary<string, (int, int, List<Building>)>
         {
-            { "Slum", (0, 1, new List<Building>()) },
-            { "Bungalow", (0, 3, new List<Building>()) },
-            { "Apartment", (0, 2, new List<Building>()) },
-            { "Skyscraper", (0, 1, new List<Building>()) },
-            { "Villa", (0, 10, new List<Building>()) },
+            { "Slum", (0, new Slum().init_limit, new List<Building>()) },
+            { "Bungalow", (0, new Bungalow().init_limit, new List<Building>()) },
+            { "Apartment", (0, new Apartment().init_limit, new List<Building>()) },
+            { "Skyscraper", (0, new Skyscraper().init_limit, new List<Building>()) },
+            { "Villa", (0, new Villa().init_limit, new List<Building>()) },
         };
 
         return buildings;

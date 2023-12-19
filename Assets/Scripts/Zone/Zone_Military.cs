@@ -8,10 +8,10 @@ public class Zone_Military : Zone
     {
         Dictionary<string, (int, int, List<Building>)> buildings = new Dictionary<string, (int, int, List<Building>)>
         {
-            { "Stable", (0, 5, new List<Building>()) },
-            { "Barrack", (0, 3, new List<Building>()) },
-            { "Hangar", (0, 2, new List<Building>()) },
-            { "MilitaryBase", (0, 1, new List<Building>()) },
+            { "Stable", (0, new Stable().init_limit, new List<Building>()) },
+            { "Barrack", (0, new Barrack().init_limit, new List<Building>()) },
+            { "Hangar", (0, new Hangar().init_limit, new List<Building>()) },
+            { "MilitaryBase", (0, new MilitaryBase().init_limit, new List<Building>()) },
         };
 
         return buildings;

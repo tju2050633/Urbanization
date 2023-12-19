@@ -8,12 +8,12 @@ public class Zone_Industrial : Zone
     {
         Dictionary<string, (int, int, List<Building>)> buildings = new Dictionary<string, (int, int, List<Building>)>
         {
-            { "Workshop", (0, 5, new List<Building>()) },
-            { "Factory", (0, 3, new List<Building>()) },
-            { "ElectronicsFactory", (0, 2, new List<Building>()) },
-            { "MilitaryFactory", (0, 3, new List<Building>()) },
-            { "ThermalPowerPlant", (0, 5, new List<Building>()) },
-            { "NuclearPowerPlant", (0, 1, new List<Building>()) },
+            { "Workshop", (0, new Workshop().init_limit, new List<Building>()) },
+            { "Factory", (0, new Factory().init_limit, new List<Building>()) },
+            { "ElectronicsFactory", (0, new ElectronicsFactory().init_limit, new List<Building>()) },
+            { "MilitaryFactory", (0, new MilitaryFactory().init_limit, new List<Building>()) },
+            { "ThermalPowerPlant", (0, new ThermalPowerPlant().init_limit, new List<Building>()) },
+            { "NuclearPowerPlant", (0, new NuclearPowerPlant().init_limit, new List<Building>()) },
         };
 
         return buildings;
