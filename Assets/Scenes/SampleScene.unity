@@ -5683,6 +5683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834545910}
+  - component: {fileID: 834545911}
   m_Layer: 5
   m_Name: Panel_Asset
   m_TagString: Untagged
@@ -5721,6 +5722,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &834545911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834545909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45c00983056a45ceaf705706264da62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &845276426
 GameObject:
   m_ObjectHideFlags: 0
@@ -7281,6 +7294,7 @@ GameObject:
   - component: {fileID: 1074853893}
   - component: {fileID: 1074853892}
   - component: {fileID: 1074853891}
+  - component: {fileID: 1074853895}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7374,6 +7388,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1074853895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074853890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f11027a49ae64cf696c7b9114684ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel_asset: {fileID: 0}
+  label_population_stock: {fileID: 0}
+  label_population_increment: {fileID: 0}
+  label_accommodation: {fileID: 0}
+  label_food_stock: {fileID: 0}
+  label_food_increment: {fileID: 0}
+  label_gold_stock: {fileID: 0}
+  label_gold_increment: {fileID: 0}
+  label_wood: {fileID: 0}
+  label_stone: {fileID: 0}
+  label_copper: {fileID: 0}
+  label_iron: {fileID: 0}
+  panel_statistic: {fileID: 0}
+  label_urbanization: {fileID: 0}
+  label_science: {fileID: 0}
+  label_culture: {fileID: 0}
+  label_commercialization: {fileID: 0}
+  label_productivity: {fileID: 0}
+  label_electricity: {fileID: 0}
+  label_military_power: {fileID: 0}
+  label_happiness: {fileID: 0}
+  label_pollutation: {fileID: 0}
+  minimap: {fileID: 0}
+  button_settings: {fileID: 0}
+  panel_control: {fileID: 0}
+  label_cellinfo: {fileID: 0}
+  label_featureinfo: {fileID: 0}
+  button_removefeature: {fileID: 0}
+  label_resourceinfo: {fileID: 0}
+  button_harvestresource: {fileID: 0}
+  label_zoneinfo: {fileID: 0}
+  button_constructzone: {fileID: 0}
+  label_buildinginfo: {fileID: 0}
+  button_constructbuilding: {fileID: 0}
+  button_demolish: {fileID: 0}
+  button_afforest: {fileID: 0}
 --- !u!1 &1140001779
 GameObject:
   m_ObjectHideFlags: 0
