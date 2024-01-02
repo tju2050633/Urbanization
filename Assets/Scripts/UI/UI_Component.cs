@@ -21,7 +21,7 @@ public class UI_Component : MonoBehaviour
         }
     }
 
-    public void render()
+    public virtual void render()
     {
         // 渲染自身
         gameObject.SetActive(true);
@@ -33,7 +33,7 @@ public class UI_Component : MonoBehaviour
         }
     }
 
-    public void hide()
+    public virtual void hide()
     {
         // 隐藏自身
         gameObject.SetActive(false);
