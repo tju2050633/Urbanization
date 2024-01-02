@@ -10,7 +10,13 @@ public class CameraController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        if((transform.position.x < -10&& horizontal<0)|| (transform.position.x > 10 && horizontal > 0)||(transform.position.y < -10 && vertical < 0)||(transform.position.x > 10 && vertical > 0))
+        {
 
-        transform.position += (new Vector3(horizontal, vertical, 0) * (Time.deltaTime * speed));
+        }
+        else
+        {
+            transform.position += (new Vector3(horizontal, vertical, 0) * (Time.deltaTime * speed));
+        }
     }
 }
