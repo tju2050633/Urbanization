@@ -18,6 +18,8 @@ public class CellManager : MonoBehaviour
         return _instance;
     }
 
+    float cell_size = 2.56f;
+
     private Cell[,] cells;
 
     private void Awake()
@@ -32,27 +34,34 @@ public class CellManager : MonoBehaviour
         }
 
         // 根据子物体的tag，初始化cells数组
-        int x_max = 0;
-        int y_max = 0;
+        int x_min = int.MaxValue;
+        int y_min = int.MaxValue;
+        int x_max = int.MinValue;
+        int y_max = int.MinValue;
+
         foreach (Transform child in transform)
         {
-            string[] coordinates = child.tag.Split(',');
-            int x = int.Parse(coordinates[0]);
-            int y = int.Parse(coordinates[1]);
+            Vector3 position = child.position;
+            int x = Mathf.RoundToInt(position.x / cell_size);
+            int y = Mathf.RoundToInt(position.y / cell_size);
+            x_min = Mathf.Min(x, x_min);
+            y_min = Mathf.Min(y, y_min);
             x_max = Mathf.Max(x, x_max);
             y_max = Mathf.Max(y, y_max);
         }
 
-        cells = new Cell[x_max + 1, y_max + 1];
+        int width = x_max - x_min + 1;
+        int height = y_max - y_min + 1;
+        cells = new Cell[width, height];
 
         foreach (Transform child in transform)
         {
             Cell cell = child.GetComponent<Cell>();
             if (cell != null)
             {
-                string[] coordinates = child.tag.Split(',');
-                int x = int.Parse(coordinates[0]);
-                int y = int.Parse(coordinates[1]);
+                Vector3 position = child.position;
+                int x = Mathf.RoundToInt(position.x / cell_size) - x_min;
+                int y = Mathf.RoundToInt(position.y / cell_size) - y_min;
                 cells[x, y] = cell;
             }
         }
