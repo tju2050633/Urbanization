@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        if((transform.position.x < -10&& horizontal<0)|| (transform.position.x > 10 && horizontal > 0)||(transform.position.y < -10 && vertical < 0)||(transform.position.x > 10 && vertical > 0))
+        if((transform.position.x < -10&& horizontal<0)|| (transform.position.x > 10 && horizontal > 0)||(transform.position.y < -10 && vertical < 0)||(transform.position.y > 10 && vertical > 0))
         {
 
         }
