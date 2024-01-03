@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2024-01-02T12:49:09.026Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15" etag="d-2jG99lev3qKsb-WIKW" version="22.1.16" type="device">
+  <diagram name="Page-1" id="80Xx5_V7AYoYYCBFcPBS">
+    <mxGraphModel dx="627" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-196" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-197" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="6V_RxtZbmtCBJ1EOpkRF-196" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-199" value="获取建筑产出" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="130" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-266" value="额外计算Happiness增益" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-287" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="610" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-199" target="6V_RxtZbmtCBJ1EOpkRF-300">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235.0000000000001" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-299" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-297" target="6V_RxtZbmtCBJ1EOpkRF-311">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-297" value="额外计算&lt;br&gt;Pollution减益" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-298" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-303" target="6V_RxtZbmtCBJ1EOpkRF-297">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-300" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="215" y="220" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-300" target="6V_RxtZbmtCBJ1EOpkRF-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-304" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-266" target="6V_RxtZbmtCBJ1EOpkRF-303">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="340" as="sourcePoint" />
+            <mxPoint x="235" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-314" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-303">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="390" />
+              <mxPoint x="300" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-303" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="215" y="370" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-305" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-300">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="240" />
+              <mxPoint x="300" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-306" value="有Happiness装饰器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-308" value="没有Happiness装饰器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="210" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-309" value="没有Pollution装饰器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-310" value="有Pollution装饰器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-313" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-311" target="6V_RxtZbmtCBJ1EOpkRF-287">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-311" value="计算最终产出" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="520" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

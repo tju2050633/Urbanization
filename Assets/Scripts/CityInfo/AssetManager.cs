@@ -40,4 +40,18 @@ public class AssetManager
         UI_Component root = GameObject.Find("UI").GetComponent<UI_Component>();
         root.update_info(new UI_Updater());
     }
+
+    // 每秒增加增量资源
+    private float timer = 0f;
+    private float interval = 1f;
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= interval)
+        {
+            Add_Stock(Population_Increment, 0, Food_Increment, Gold_Increment, 0, 0, 0, 0);
+            timer = 0f;
+        }
+    }
 }

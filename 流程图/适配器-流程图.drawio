@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2024-01-02T12:27:12.653Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15" etag="7TWKRrWwWPbrx7f-TG-O" version="22.1.16" type="device">
+  <diagram name="Page-1" id="80Xx5_V7AYoYYCBFcPBS">
+    <mxGraphModel dx="627" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-196" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-197" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="6V_RxtZbmtCBJ1EOpkRF-196" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-199" value="保存或读取&lt;br&gt;游戏存档" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="185" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-205" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="440" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="6V_RxtZbmtCBJ1EOpkRF-205">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235.0000000000001" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-240" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-199" target="6V_RxtZbmtCBJ1EOpkRF-248">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="280" as="sourcePoint" />
+            <mxPoint x="235" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-248">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="319.9999999999999" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-248" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="215" y="240" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-248">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235.0000000000001" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-251" value="JSON格式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="165" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-254" value="XML格式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="228" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-255" value="新建XML适配器对象" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="325" y="230" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-256" value="调用备忘录&lt;br&gt;模式相关服务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="177.5" y="320" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6V_RxtZbmtCBJ1EOpkRF-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6V_RxtZbmtCBJ1EOpkRF-255" target="6V_RxtZbmtCBJ1EOpkRF-256">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

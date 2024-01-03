@@ -63,6 +63,8 @@ public class CellManager : MonoBehaviour
                 int x = Mathf.RoundToInt(position.x / cell_size) - x_min;
                 int y = Mathf.RoundToInt(position.y / cell_size) - y_min;
                 cells[x, y] = cell;
+                cell.x = x;
+                cell.y = y;
             }
         }
     }
@@ -85,5 +87,14 @@ public class CellManager : MonoBehaviour
             }
         }
         return neighborCells;
+    }
+
+    // 所有单元格恢复原色
+    public void AllResetColor()
+    {
+        foreach (Cell cell in cells)
+        {
+            cell.ResetColor();
+        }
     }
 }

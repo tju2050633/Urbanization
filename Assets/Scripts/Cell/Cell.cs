@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // 桥接模式：单元格对象持有地形、地貌、资源三个可拓展类型的属性
 // 观察者模式：单元格是被观察者，建筑是观察者
@@ -31,6 +32,26 @@ public class Cell : MonoBehaviour
     public float military = 0;
     public float happiness = 0;
     public float pollution = 0;
+
+    void Start()
+    {
+        GetComponent<Button>().onClick.AddListener(OnMouseDown);
+    }
+
+    // 点击事件
+    public void OnMouseDown()
+    {
+        UI root = GameObject.Find("Canvas").GetComponent<UI>();
+        root.selectCell(this);
+
+        CellManager.getInstance().AllResetColor();
+        GetComponent<SpriteRenderer>().color = new Color32(200, 200, 200, 255);
+    }
+
+    public void ResetColor()
+    {
+        GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+    }
 
     private void ResetProperties()
     {

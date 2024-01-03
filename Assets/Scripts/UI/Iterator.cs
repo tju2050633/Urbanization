@@ -6,5 +6,5 @@ using UnityEngine;
 public interface Iterator
 {
     public bool hasNext();
-    public object next();
+    public UI_Component next();
 }
